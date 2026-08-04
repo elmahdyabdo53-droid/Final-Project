@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus-skill Exchange Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Avenir+Next+LT+Arabic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+<header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Nexus logo">
+                </a>
+            </div>
+
+           <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="success.html">success Stories</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li class="nav-right"><a href="profile.html">profile</a></li>
+                   <li><a href="Dashboard.html" class="btn primary-btn">Dashboard</a></li>
+                </ul> 
+            </nav>
+
+            <div class="user-actions">
+                <a href="search-results.html" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="alerts.html" class="icon-link"><i class="fas fa-bell"></i></a>
+                <a href="alerts.html" class="icon-link"><i class="fas fa-envelope"></i></a>
+                <a href="login.html" class="btn primary-btn">Login</a>
+                <a href="Join Now.html" class="btn secondary-btn">sign Up</a>
+            </div>
+             <div  class="mobile-menu-icon" id="mobile-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+
+    <main class="dashboard-content">
+      <div class="container add-skill-container">
+        <h1 class="page-title">Add a New Skill</h1>
+        <p class="page-subtitle">
+          Fill in the details below to add a new skill to your platform.
+        </p>
+
+        <div class="add-skill-layout">
+          <div class="add-skill-form-column">
+            <div class="progress-bar-container">
+              <div class="progress-bar"></div>
+            </div>
+
+            <form id="add-skill-form">
+              <div class="form-step current-step" id="step-1">
+                <h2>Step 1: Basic Information</h2>
+                <p>Provide the core details of the new skill.</p>
+                <div class="form-group">
+                  <label for="skill-name">Skill Name</label>
+                  <input
+                    type="text"
+                    id="skill-name"
+                    name="skill_name"
+                    placeholder="E.g., Web Development, Graphic Design"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="short-description">Short Description</label>
+                  <textarea
+                    id="short-description"
+                    name="short_description"
+                    rows="3"
+                    placeholder="A brief, engaging summary of the skill."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="skill-category">Skill Category</label>
+                  <select id="skill-category" name="skill_category" required>
+                    <option value="">-- Select a Category --</option>
+                    <option value="technology">Technology</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="design">Design</option>
+                    <option value="business">Business</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="skill-level">Skill Level</label>
+                  <select id="skill-level" name="skill_level" required>
+                    <option value="">-- Select a Level --</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-step" id="step-2">
+                <h2>Step 2: Content Details</h2>
+                <p>Write a detailed description and add key points.</p>
+                <div class="form-group">
+                  <label for="full-description">Full Description</label>
+                  <textarea
+                    id="full-description"
+                    name="full_description"
+                    rows="10"
+                    placeholder="Provide a detailed, compelling description of the skill. What will learners gain?"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="key-benefits">Key Benefits</label>
+                  <p class="form-helper-text">
+                    List the main benefits of learning this skill. (e.g., Career
+                    growth, New opportunities).
+                  </p>
+                  <div class="benefits-list">
+                    <input
+                      type="text"
+                      name="benefit_1"
+                      placeholder="Benefit 1"
+                      class="benefit-input"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="benefit_2"
+                      placeholder="Benefit 2"
+                      class="benefit-input"
+                      required
+                    />
+                    <input
+                      type="text"
+                      name="benefit_3"
+                      placeholder="Benefit 3"
+                      class="benefit-input"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-step" id="step-3">
+                <h2>Step 3: Categorization & Visuals</h2>
+                <p>Categorize the skill and upload a cover image.</p>
+                <div class="form-group">
+                  <label for="cover-image">Cover Image</label>
+                  <div class="file-upload-box" id="drop-area">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <p>Drag and drop your image here, or <span>browse</span></p>
+                    <input
+                      type="file"
+                      id="cover-image"
+                      name="cover_image"
+                      accept="image/*"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="skill-status">Skill Status</label>
+                  <p class="form-helper-text">
+                    Set the current status of this skill.
+                  </p>
+                  <select id="skill-status" name="skill_status" required>
+                    <option value="draft">Draft</option>
+                    <option value="published">Published</option>
+                    <option value="pending-review">Pending Review</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+
+            <div class="form-navigation">
+              <button
+                type="button"
+                class="btn secondary-btn"
+                id="prev-btn"
+                style="display: none"
+              >
+                Previous
+              </button>
+              <button type="button" class="btn primary-btn" id="next-btn">
+                Next
+              </button>
+            </div>
+          </div>
+
+          <div class="live-preview-column">
+            <h2>Live Preview</h2>
+            <div class="live-preview-card-container"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>About Nexus</h3>
+            <p>
+              Nexus is a free platform for skill exchange, built to foster a
+              collaborative community where knowledge is the currency.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="skills display.html">Browse Skills</a></li>
+              <li><a href="workshops.html">Workshops</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="how-it-works.html">How it Works</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section help">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Use</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section newsletter">
+            <h3>Join Our Newsletter</h3>
+            <form action="#" method="post">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Address"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nexus. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="main.js" defer></script>
+  </body>
+</html>

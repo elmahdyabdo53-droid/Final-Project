@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus-skill Exchange Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Avenir+Next+LT+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Nexus logo">
+                </a>
+            </div>
+
+           <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="success.html">success Stories</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li class="nav-right"><a href="profile.html">profile</a></li>
+                   <li><a href="Dashboard.html" class="btn primary-btn">Dashboard</a></li>
+                </ul> 
+            </nav>
+
+            <div class="user-actions">
+                <a href="search-results.html" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="alerts.html" class="icon-link"><i class="fas fa-bell"></i></a>
+                <a href="alerts.html" class="icon-link"><i class="fas fa-envelope"></i></a>
+                <a href="login.html" class="btn primary-btn">Login</a>
+                <a href="Join Now.html" class="btn secondary-btn">sign Up</a>
+            </div>
+             <div  class="mobile-menu-icon" id="mobile-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+<main>
+    <section class="search-and-filter-section">
+        <div class="container">
+            <form action="#" method="get" class="main-search-form">
+                <div class="search-bar">
+                    <input type="text" name="search_query" placeholder="Search for skills, users, or workshops...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="trending-tags">
+                    <span>Trending:</span>
+                    <a href="#">#WebDev</a>
+                    <a href="#">#Design</a>
+                    <a href="#">#Photography</a>
+                    <a href="#">#AI</a>
+                </div>
+            </form>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="skill-type">Type:</label>
+                    <select name="skill_type" id="skill-type">
+                        <option value="all">All</option>
+                        <option value="offered">Offered</option>
+                        <option value="requested">Requested</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select name="category" id="category">
+                        <option value="all">All</option>
+                        <option value="coding">Coding</option>
+                        <option value="design">Design</option>
+                        <option value="art">Art</option>
+                        <option value="photography">Photography</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="level">Level:</label>
+                    <select name="level" id="level">
+                        <option value="all">All</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <button type="button" class="btn secondary-btn clear-btn">Clear Filters</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-display-section">
+        <div class="container">
+            <div class="results-info">
+                <p>Showing <span>120</span> results for "Web Development"</p>
+            </div>
+
+            <div class="sort-options">
+                <span>Sort by:</span>
+                <a href="#" class="active">Newest</a>
+                <a href="#">Popular</a>
+                <a href="#">Rating</a>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="images/Graphic Design Skill.jpg" alt="Graphic Design Skill" id="Graphic-Design-Skill">
+                    <div class="card-content">
+                        <span class="skill-tag">Design</span>
+                        <h4>Graphic Design Basics</h4>
+                        <div class="skill-meta">
+                            <img src="images/john.jpg" alt="User Avatar">
+                            <h5>by John Doe</h5>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-hover-info">
+                        <p>Learn the fundamental principles of graphic design...</p>
+                    </div>
+                </div>
+
+                </div>
+                <div class="pagination">
+                <a href="#Graphic-Design-Skill" class="active">1</a>
+                <a href="#">2</a>
+                <span>...</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="requested-skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills Requested by the Community</h2>
+            <div class="skills-grid">
+                <div class="skill-card requested-card">
+                    <div class="card-content">
+                        <span class="skill-tag">Coding</span>
+                        <h4>Advanced JavaScript</h4>
+                        <h5>by Community</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Can't find what you need?</h2>
+                <p class="cta-subtitle">Request a skill or share your expertise with our community.</p>
+                <a href="skills display.html" class="btn primary-btn">Request a Skill</a>
+                <a href="add-skill.html" class="btn secondary-btn">Add Your Skill</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Nexus</h3>
+                <p>Nexus is a free platform for skill exchange, built to foster a collaborative community where knowledge is the currency.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="skills display.html">Browse Skills</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section help">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Nexus. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="main.js" defer></script>
+</body>
+</html>
+

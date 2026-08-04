@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>\Nexus-skill Exchange Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Avenir+Next+LT+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Nexus logo">
+                </a>
+            </div>
+
+           <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="success.html">success Stories</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li class="nav-right"><a href="profile.html">profile</a></li>
+                   <li><a href="Dashboard.html" class="btn primary-btn">Dashboard</a></li>
+                </ul> 
+            </nav>
+
+            <div class="user-actions">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-bell"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-envelope"></i></a>
+                <a href="login.html" class="btn primary-btn">Login</a>
+                <a href="Join Now.html" class="btn secondary-btn">sign Up</a>
+            </div>
+            <div  class="mobile-menu-icon" id="mobile-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="blog-hero-section">
+    <div class="container">
+        <div class="hero-header-content">
+            <h1 class="hero-title">Welcome to the Nexus Blog</h1>
+            <p class="hero-subtitle">Insightful articles, tutorials, and stories from our vibrant community.</p>
+
+            <div class="blog-search-bar">
+                <form action="search-results.html" method="get">
+                    <input type="text" placeholder="Search for articles..." name="search_query">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="featured-and-author">
+            <div class="featured-post-carousel">
+                <div class="featured-post-item active">
+                    <img src="images/coding.jpg" alt="Featured Post Image 1">
+                    <div class="featured-post-content">
+                        <span class="post-tag">Coding</span>
+                        <h4>A Beginner's Guide to Building Your First API</h4>
+                        <a href="single-post.html" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="featured-post-item">
+                    <img src="images/design.jpg" alt="Featured Post Image 2">
+                    <div class="featured-post-content">
+                        <span class="post-tag">Design</span>
+                        <h4>10 Principles of Great UI/UX Design</h4>
+                        <a href="single-post.html" class="read-more-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-author">
+                <div class="author-info">
+                    <img src="images/Featured Author.jpg" alt="Featured Author Avatar">
+                    <div>
+                        <p class="section-label">Featured Author</p>
+                        <h4>Sarah Johnson</h4>
+                        <p>UX Designer & Blogger</p>
+                    </div>
+                </div>
+                <div class="author-bio">
+                    <p>"I love sharing my knowledge with the community. Let's create amazing things together!"</p>
+                </div>
+                <a href="profile.html" class="btn secondary-btn">View Profile</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blog-posts-section">
+    <div class="container">
+        <div class="blog-filters">
+            <div class="filter-item">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="all">All</option>
+                    <option value="coding">Coding</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="sort-by">Sort by:</label>
+                <select id="sort-by">
+                    <option value="newest">Newest</option>
+                    <option value="popular">Popular</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="blog-posts-grid">
+            <div class="blog-post-card">
+                <img src="images/coding.jpg" alt="Post Title">
+                <div class="card-content">
+                    <span class="post-tag">Coding</span>
+                    <h4>A Beginner's Guide to Git and GitHub</h4>
+                    <p class="post-summary">Learn the essential commands of Git and how to use GitHub for version control and collaboration.</p>
+                    <div class="post-meta">
+                        <img src="images/ahmed.jpg" alt="Author Avatar">
+                        <span class="author-name">by Ali Ahmed</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post-card">
+                <img src="images/design.jpg" alt="Post Title">
+                <div class="card-content">
+                    <span class="post-tag">Design</span>
+                    <h4>5 Tips for Creating a Professional Portfolio</h4>
+                    <p class="post-summary">Discover key strategies to showcase your design work effectively and land your dream job.</p>
+                    <div class="post-meta">
+                        <img src="images/fatma.jpg" alt="Author Avatar">
+                        <span class="author-name">by Mona Said</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+
+        <div class="empty-state-message" style="display: none;">
+            <p>Sorry, no articles were found in this category. Be the first to <a href="create-post.html">write one</a>!</p>
+        </div>
+
+        <div class="pagination">
+            <a href="blog.html?page=1" class="active">1</a>
+            <a href="blog.html?page=2">2</a>
+            <span>...</span>
+            <a href="blog.html?page=3">3</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="newsletter-section">
+    <div class="container text-center">
+        <h2 class="section-title">Join Our Community!</h2>
+        <p class="section-subtitle">
+            Stay updated with the latest articles, exclusive content, and workshops directly in your inbox.
+        </p>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn primary-btn">Subscribe</button>
+        </form>
+
+        <p class="privacy-note">
+            We respect your privacy and will never share your email with third parties.
+        </p>
+
+        <div id="thank-you-message" style="display: none;">
+            <p>Thank you for subscribing! Check your inbox for a confirmation email.</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+      <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Nexus</h3>
+                <p>Nexus is a free platform for skill exchange, built to foster a collaborative community where knowledge is the currency.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="skills display.html">Browse Skills</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section help">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Nexus. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="main.js" defer></script>
+</body>
+</html>
+    

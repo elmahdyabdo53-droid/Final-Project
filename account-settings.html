@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus-skill Exchange Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Avenir+Next+LT+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Nexus-logo">
+                </a>
+            </div>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="success.html">success Stories</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li class="nav-right"><a href="profile.html">profile</a></li>
+                   <li><a href="Dashboard.html" class="btn primary-btn">Dashboard</a></li>
+                </ul> 
+            </nav>
+
+            <div class="user-actions">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-bell"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-envelope"></i></a>
+                <a href="login.html" class="btn primary-btn">Login</a>
+                <a href="Join Now.html" class="btn secondary-btn">sign Up</a>
+            </div>
+            <div  class="mobile-menu-icon" id="mobile-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        </div>
+    </header>
+
+
+    <main class="main-content">
+        <div class="container account-settings-container">
+            <div class="settings-layout">
+    <div class="settings-sidebar">
+        <h2 class="sidebar-heading">Settings</h2>
+        <ul class="settings-nav">
+            <li class="nav-item active" data-target="profile-settings">
+                <i class="fas fa-user-circle"></i>
+                Profile Information
+            </li>
+            <li class="nav-item" data-target="security-settings">
+                <i class="fas fa-lock"></i>
+                Password & Security
+            </li>
+            <li class="nav-item" data-target="notification-settings">
+                <i class="fas fa-bell"></i>
+                Notifications
+            </li>
+            <li class="nav-item" data-target="data-settings">
+                <i class="fas fa-database"></i>
+                Data Control
+            </li>
+        </ul>
+    </div>
+
+<div class="settings-content">
+    <div class="settings-panel active" id="profile-settings">
+        <h3 class="panel-heading">Profile Information</h3>
+        <p class="panel-subtitle">Update your personal details and profile picture.</p>
+        <div class="profile-picture-container">
+            <img src="images/john.jpg" alt="User Profile Picture" class="profile-picture">
+            <button class="btn secondary-btn">Change Photo</button>
+        </div>
+        <form class="profile-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full_name" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us a little about yourself..."></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn primary-btn">Save Changes</button>
+                <button type="reset" class="btn secondary-btn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="settings-panel" id="security-settings">
+        <h3 class="panel-heading">Password & Security</h3>
+        <p class="panel-subtitle">Change your password and manage your security settings.</p>
+        <form class="security-form">
+            <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <input type="password" id="current-password" name="current_password" placeholder="Enter your current password" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new_password" placeholder="Enter a new password" required>
+                <p class="helper-text">Password must be at least 8 characters long.</p>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm New Password</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your new password" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn primary-btn">Change Password</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="settings-panel" id="notification-settings">
+        <h3 class="panel-heading">Notifications</h3>
+        <p class="panel-subtitle">Control the email notifications you receive.</p>
+        <form class="notifications-form">
+            <div class="form-group">
+                <p class="helper-text">
+                    Control the types of notifications you receive via email.
+                </p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="new-skill-email" name="new_skill_email" checked>
+                    <label for="new-skill-email">Email me about new skills and courses.</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="workshop-updates-email" name="workshop_updates_email" checked>
+                    <label for="workshop-updates-email">Email me about updates to my subscribed workshops.</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="marketing-email" name="marketing_email">
+                    <label for="marketing-email">Email me with special offers and marketing promotions.</label>
+
+</div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn primary-btn">Save Preferences</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="settings-panel" id="data-settings">
+        <h3 class="panel-heading">Data Control</h3>
+        <p class="panel-subtitle">Manage your personal data and account.</p>
+        <div class="data-control-form">
+            <div class="form-group">
+                <h4 class="form-section-heading">Export Your Data</h4>
+                <p class="helper-text">
+                    Request a copy of your personal data in a machine-readable format.
+                </p>
+                <button type="button" class="btn secondary-btn">Request Data Export</button>
+            </div>
+            <hr class="section-divider">
+            <div class="form-group">
+                <h4 class="form-section-heading">Delete Your Account</h4>
+                <p class="helper-text warning-text">
+                    Deleting your account is a permanent action. All your data will be erased and cannot be recovered.
+                </p>
+                <button type="button" class="btn delete-btn">Delete My Account</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </main>
+
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Nexus</h3>
+                <p>Nexus is a free platform for skill exchange, built to foster a collaborative community where knowledge is the currency.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="skills display.html">Browse Skills</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section help">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Nexus. All Rights Reserved.</p>
+    </div>
+</footer>
+<script src="main.js" defer></script>
+    </body>
+</html>
